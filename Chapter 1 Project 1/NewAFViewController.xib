@@ -17,7 +17,7 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-Z5-ygs">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vdD-Z5-ygs">
                     <rect key="frame" x="0.0" y="80" width="600" height="510"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eMo-7U-1XV">
                         <size key="itemSize" width="50" height="50"/>
@@ -30,14 +30,20 @@
                         <outlet property="delegate" destination="-1" id="Jfs-KJ-GWg"/>
                     </connections>
                 </collectionView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLl-Pf-3em">
-                    <rect key="frame" x="16" y="34" width="112" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLl-Pf-3em">
+                    <rect key="frame" x="17" y="29" width="112" height="30"/>
                     <state key="normal" title="Add Color Cell">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vdD-Z5-ygs" secondAttribute="bottom" id="3fY-VT-xTN"/>
+                <constraint firstItem="vdD-Z5-ygs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OpJ-qx-jZl"/>
+                <constraint firstAttribute="trailing" secondItem="vdD-Z5-ygs" secondAttribute="trailing" id="Y43-e8-2Xw"/>
+                <constraint firstItem="HLl-Pf-3em" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="pwZ-6o-KsE"/>
+            </constraints>
         </view>
     </objects>
 </document>
