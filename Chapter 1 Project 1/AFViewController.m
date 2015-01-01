@@ -23,6 +23,8 @@
 @property (nonatomic, strong) NSString *message;
 @property (nonatomic, strong) NSMutableArray *colorArray;
 @property (nonatomic, strong) NSNumber *itemCount;
+@property (nonatomic, strong) IBOutlet UIButton *addCell;
+@property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @end
 static NSString *kCellIdentifier = @"Cell Identifier";
 
@@ -71,6 +73,10 @@ static NSString *kCellIdentifier = @"Cell Identifier";
     self.message = [NSString stringWithFormat:@"Cell: %li in section %li.", (long)path.row, (NSInteger)path.section];
   }];
   self.collectionView.delegate = self.collectionViewDelegate;
+  
+  [self.addCell rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+    [self ]
+  }
 }
 
 - (void)addColor:(UIColor*)color {

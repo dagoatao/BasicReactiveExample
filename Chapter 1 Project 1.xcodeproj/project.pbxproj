@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46EA01A19C573020CB0C838B /* libPods-Chapter 1 Project 1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE260EF4A110EB1DFD0A2B8 /* libPods-Chapter 1 Project 1.a */; };
+		4CF0C3101A56018F00CE759C /* NewAFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CF0C30F1A56018F00CE759C /* NewAFViewController.xib */; };
 		5E534A5316755F9700873502 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E534A5216755F9700873502 /* UIKit.framework */; };
 		5E534A5516755F9700873502 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E534A5416755F9700873502 /* Foundation.framework */; };
 		5E534A5716755F9700873502 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E534A5616755F9700873502 /* CoreGraphics.framework */; };
@@ -18,11 +19,11 @@
 		5E534A6716755F9700873502 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E534A6616755F9700873502 /* Default@2x.png */; };
 		5E534A6916755F9700873502 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E534A6816755F9700873502 /* Default-568h@2x.png */; };
 		5E534A6C16755F9700873502 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E534A6B16755F9700873502 /* AFViewController.m */; };
-		5E534A6F16755F9700873502 /* AFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E534A6D16755F9700873502 /* AFViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CE260EF4A110EB1DFD0A2B8 /* libPods-Chapter 1 Project 1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Chapter 1 Project 1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF0C30F1A56018F00CE759C /* NewAFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewAFViewController.xib; sourceTree = "<group>"; };
 		589AB13A48AB890C9307B964 /* Pods-Chapter 1 Project 1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapter 1 Project 1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chapter 1 Project 1/Pods-Chapter 1 Project 1.debug.xcconfig"; sourceTree = "<group>"; };
 		5E534A4E16755F9700873502 /* Chapter 1 Project 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter 1 Project 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E534A5216755F9700873502 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -39,7 +40,6 @@
 		5E534A6816755F9700873502 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5E534A6A16755F9700873502 /* AFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFViewController.h; sourceTree = "<group>"; };
 		5E534A6B16755F9700873502 /* AFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFViewController.m; sourceTree = "<group>"; };
-		5E534A6E16755F9700873502 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AFViewController.xib; sourceTree = "<group>"; };
 		95207010F3AC52E795AA9DDA /* Pods-Chapter 1 Project 1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapter 1 Project 1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chapter 1 Project 1/Pods-Chapter 1 Project 1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,8 +94,8 @@
 				5E534A6216755F9700873502 /* AFAppDelegate.m */,
 				5E534A6A16755F9700873502 /* AFViewController.h */,
 				5E534A6B16755F9700873502 /* AFViewController.m */,
-				5E534A6D16755F9700873502 /* AFViewController.xib */,
 				5E534A5916755F9700873502 /* Supporting Files */,
+				4CF0C30F1A56018F00CE759C /* NewAFViewController.xib */,
 			);
 			path = "Chapter 1 Project 1";
 			sourceTree = "<group>";
@@ -179,9 +179,9 @@
 			files = (
 				5E534A5D16755F9700873502 /* InfoPlist.strings in Resources */,
 				5E534A6516755F9700873502 /* Default.png in Resources */,
+				4CF0C3101A56018F00CE759C /* NewAFViewController.xib in Resources */,
 				5E534A6716755F9700873502 /* Default@2x.png in Resources */,
 				5E534A6916755F9700873502 /* Default-568h@2x.png in Resources */,
-				5E534A6F16755F9700873502 /* AFViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +240,6 @@
 				5E534A5C16755F9700873502 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		5E534A6D16755F9700873502 /* AFViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E534A6E16755F9700873502 /* en */,
-			);
-			name = AFViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

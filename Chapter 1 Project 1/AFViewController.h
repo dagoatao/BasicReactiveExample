@@ -6,6 +6,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AFViewController : UICollectionViewController
+@interface AFViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource>
 
 @end
