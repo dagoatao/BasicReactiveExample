@@ -2,8 +2,7 @@ BasicReactiveExample
 ====================
 
 
-Ok so this is a bit sloppy as I didn't have much that I was able to share. Basically, I just took a simple collection
-view example I was able to find on the internet and added some reactive code.
+Basically, I just took a simple collectionview example I was able to find on the internet and added some reactive code.
 
 Very simple example of reactive programming example in conjunction with a collection view.
  This example does three things. 
